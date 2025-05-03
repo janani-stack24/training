@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document </title>
+
+        <style>
+            .class1{
+                background-color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="you">say about you</p>
+        <input type="text" name="" id="about">
+        <button onclick="about()">change about</button>
+        <button onclick="(()=>{para.classList.remove('class1')})()">remove</button>
+        <script>
+            function about(){
+                about=document.getElementById("about").value;
+                para=document.getElementById("you");
+                para.innerText=about;
+                para.classList.add("class1")
+            }
+        </script>
+    </body>
+</html>

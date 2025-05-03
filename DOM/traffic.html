@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+    <style>
+        .traffic-light{
+             background-color: black;
+             padding: 10px;
+             height: 350px;
+             width: 150px;
+             
+        }    
+
+        .light {
+            width: 100px;
+            height: 100px;
+            background-color:white;
+            border-radius: 50%;
+            margin: 5px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="traffic-light">
+        <div class="light red"id="red"></div>
+        <div class="light yellow"id="yellow"></div>
+        <div class="light green"id="green"></div>
+    </div>
+    <button onclick="changelight('red')">red</button>
+    <button onclick="changelight('yellow')">yellow</button>
+    <button onclick="changelight('green')">green</button>
+    <script>
+
+        function changelight(color){
+            red=document.getElementById("red").style.backgroundColor="white"
+            yellow=document.getElementById("yellow").style.backgroundColor="white"
+            green=document.getElementById("green").style.backgroundColor="white"
+            document.getElementById(color).style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
